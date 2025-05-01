@@ -1,0 +1,71 @@
+[
+    {
+      "isim": "LALE",
+      "fiyat": 3100,
+      "stok": true,
+      
+      "kategori": "Buket",
+      
+      "resim": "https://i.pinimg.com/736x/58/4b/44/584b44a7fcac8912dc28286eaaa77244.jpg"
+    },
+    {
+      "isim": "ORKİDE",
+      "fiyat": 5000,
+      "stok": true,
+      
+      "kategori": "Buket",
+      
+      "resim": "https://i.pinimg.com/736x/11/9b/77/119b77a3ac7e983f557cae9a35e34f0a.jpg"
+    },
+  
+    
+{
+    
+    "isim": "PAPATYA ",
+    "fiyat": 3000,
+    "stok": true,
+    
+    "kategori": "Buket",
+    
+    "resim": "https://i.pinimg.com/736x/50/e3/64/50e364431eaab4cfad20c97be51812ab.jpg"
+  },
+  {
+    "isim": "RENKLİ GÜL BUKETİ",
+    "fiyat": 10000,
+    "stok": true,
+    
+    "kategori": "Buket",
+    
+    "resim": "https://i.pinimg.com/736x/ab/89/e8/ab89e825edbfce2e65d8608268cd6d40.jpg"
+  },
+
+
+  {
+    
+    "isim": "KIRMIZI GÜL  BUKETİ ",
+    "fiyat": 50000,
+    "stok": true,
+    
+    "kategori": "Buket",
+    
+    "resim": "https://i.pinimg.com/736x/b5/50/bb/b550bb8051325673b7ca094496caefc7.jpg"
+  },
+  {
+    "isim": "ŞAKAYIK",
+    "fiyat": 80000,
+    "stok": true,
+    
+    "kategori": "Buket",
+    
+    "resim": "https://i.pinimg.com/736x/9d/82/39/9d8239edfdda94a45e427da6ab3380b1.jpg"
+  }
+
+
+
+
+
+
+]
+  
+
+  

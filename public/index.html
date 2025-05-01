@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>FLOWER SHOP</title>
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+  <h1>FLOWER SHOP</h1>
+
+  <!-- Çiçek listesi -->
+  <div id="flower-list"></div>
+
+  <!-- Kayıt Formu -->
+  <form action="/register" method="POST">
+    <label>Ad:</label>
+    <input type="text" name="ad"><br>
+  
+    <label>Email:</label>
+    <input type="email" name="email"><br>
+  
+    <label>Şifre:</label>
+    <input type="password" name="sifre"><br>
+  
+    <button type="submit">Kayıt Ol</button>
+  </form>
+  
+
+  <!-- JavaScript ile çiçekleri getir -->
+  <script>
+    // fetch ile sunucudan çiçek verilerini alıyoruz
+    fetch('/api/flowers')
+      .then(response => response.json())
+      .then(data => {
+        const container = document.getElementById('flower-list');
+        
+        // Her çiçek için kart oluştur
+        data.forEach(flower => {
+          const card = document.createElement('div');
+          card.innerHTML = `
+            <h3>${flower.isim}</h3>
+            <img src="${flower.resim}" alt="${flower.isim}" width="150">
+            <p>Fiyat: ${flower.fiyat}₺</p>
+            <p>Kategori: ${flower.kategori}</p>
+            <p>Stok: ${flower.stok ? 'Var' : 'Yok'}</p>
+            <hr>
+          `;
+          container.appendChild(card);
+        });
+      });
+  </script>
+</body>
+</html>
